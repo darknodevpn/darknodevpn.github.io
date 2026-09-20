@@ -1,9 +1,255 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Darknode</title>
-  </head>
-  <body>
-    <h1>Hello!</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Darknode — Safer Internet</title>
+  <meta name="description" content="Darknode is an encrypted, system-wide Android VPN. One tap. Luxury black-and-silver UI. No account required." />
+  <meta name="theme-color" content="#050505" />
+  <link rel="canonical" href="https://darknodevpn.com/" />
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/img/icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Darknode" />
+  <meta property="og:title" content="Darknode — Safer Internet" />
+  <meta property="og:description" content="Encrypted Android VPN. Stay in the shadows." />
+  <meta property="og:url" content="https://darknodevpn.com/" />
+  <meta property="og:image" content="https://darknodevpn.com/assets/img/icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">
+        <img src="assets/img/icon-round.png" alt="" width="36" height="36" />
+        <span class="brand-name">Darknode</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="/vpn-disclosure">Disclosure</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-solid" data-play href="https://play.google.com/store/apps/details?id=com.darknode.vpn">Get the app</a>
+        <button class="nav-toggle" type="button" aria-label="Menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="halo" aria-hidden="true"></div>
+      <img class="mark" src="assets/img/mark.png" alt="" />
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Android VPN</p>
+          <h1 class="hero-title">Safer Internet</h1>
+          <p class="hero-line">Stay in the shadows.</p>
+          <p class="hero-lead">Darknode is an encrypted, system-wide VPN for Android. One tap opens a secure tunnel. Luxury black-and-silver UI. No account required.</p>
+          <div class="hero-cta">
+            <a class="btn btn-solid" data-play href="https://play.google.com/store/apps/details?id=com.darknode.vpn">
+              <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 20.5v-17L21 12 3 20.5z"/></svg>
+              <span>Get it on Google Play</span>
+            </a>
+            <a class="btn btn-ghost" href="/privacy-policy">Privacy policy</a>
+          </div>
+        </div>
+        <div class="device-wrap">
+          <div class="device" data-state="idle">
+            <div class="device-screen">
+              <div class="phone-brand">
+                <strong>DARKNODE</strong>
+                <em>Stay in the shadows</em>
+                <div class="phone-status" data-status>Offline</div>
+              </div>
+              <div class="connect">
+                <div class="connect-aura"></div>
+                <div class="connect-ring"></div>
+                <div class="connect-core">
+                  <div>
+                    <div class="connect-label" data-label>START</div>
+                    <div class="connect-timer" data-timer></div>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-stats">
+                <div class="ip-label">IP</div>
+                <div class="ip-value" data-ip>—</div>
+                <div class="muted" style="margin-top:6px;font-size:0.72rem" data-hint>Tap Connect to start VPN</div>
+                <div class="traffic">
+                  <div>
+                    <div class="traffic-label">UP</div>
+                    <b data-up>0 B</b>
+                  </div>
+                  <div>
+                    <div class="traffic-label">DOWN</div>
+                    <b data-down>0 B</b>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-foot">Privacy Policy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats wrap" aria-label="Highlights">
+      <div class="stat">
+        <b>One tap</b>
+        <span>Connect in a single press</span>
+      </div>
+      <div class="stat">
+        <b>System-wide</b>
+        <span>Android VpnService</span>
+      </div>
+      <div class="stat">
+        <b>Encrypted tunnel</b>
+        <span>Device traffic, secured</span>
+      </div>
+      <div class="stat">
+        <b>Android 7.0+</b>
+        <span>No sign-in</span>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Capabilities</p>
+          <h2>Built for a quieter connection</h2>
+          <p>Everything in Darknode exists to open an encrypted tunnel, pick a working server, and stay honest about data.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <svg viewBox="0 0 24 24"><path d="M12 3 4 6.5v5.2c0 5 3.5 9.6 8 10.8 4.5-1.2 8-5.8 8-10.8V6.5L12 3z"/><path d="M9 12.2 11 14l4-4.5"/></svg>
+            <h3>Encrypted tunnel</h3>
+            <p>Device traffic is routed through an encrypted VPN tunnel to a remote server endpoint. That is the core function of the app.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 19h2"/></svg>
+            <h3>System-wide VPN</h3>
+            <p>Darknode uses Android’s VpnService, so the tunnel covers the whole device — not just a single browser.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+            <h3>Smart server pick</h3>
+            <p>The app fetches the active server list, probes latency, and connects to a working endpoint. If one fails, it tries another.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            <h3>One-tap connect</h3>
+            <p>No account, no setup. Review the disclosure, tap START, and Darknode opens the tunnel.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24"><path d="M4 12h16M12 4v16"/><circle cx="12" cy="12" r="9"/></svg>
+            <h3>No traffic contents</h3>
+            <p>We do not collect browsing history, messages, passwords, or the contents of your encrypted VPN traffic.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24"><path d="M8 11V8a4 4 0 0 1 8 0v3"/><rect x="6" y="11" width="12" height="9" rx="2"/></svg>
+            <h3>Disclosure first</h3>
+            <p>Before you connect, Darknode shows a VPN data disclosure. You can decline and not use the VPN features.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how" style="padding-top:0">
+      <div class="wrap split">
+        <div class="section-head" style="margin-bottom:0">
+          <p class="kicker">How it works</p>
+          <h2>Start. Tunnel. Done.</h2>
+          <p>The in-app flow is deliberately short: review, tap START, wait for Secured.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">01</div>
+            <div>
+              <h3>Review</h3>
+              <p>Read the in-app VPN disclosure and accept only if you agree with the data practices.</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-num">02</div>
+            <div>
+              <h3>Connect</h3>
+              <p>Tap START. Darknode requests Android VPN permission, picks a server, and opens the tunnel.</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-num">03</div>
+            <div>
+              <h3>Secured</h3>
+              <p>When the exit IP is confirmed, status flips to Secured.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Privacy</p>
+          <h2>What we access — and what we don’t</h2>
+          <p>Darknode collects only what it needs to run the VPN. The full policy lives at darknodevpn.com/privacy-policy.</p>
+        </div>
+        <div class="privacy-grid">
+          <article class="card privacy-card yes">
+            <h3>We may process</h3>
+            <ul>
+              <li><span class="dot"></span><span>A hashed device identifier for service operation</span></li>
+              <li><span class="dot"></span><span>Approximate country and public IP before you connect</span></li>
+            </ul>
+          </article>
+          <article class="card privacy-card no">
+            <h3>We do not collect</h3>
+            <ul>
+              <li><span class="dot"></span><span>Browsing history</span></li>
+              <li><span class="dot"></span><span>Messages, passwords, or traffic contents</span></li>
+              <li><span class="dot"></span><span>DNS query contents for profiling</span></li>
+              <li><span class="dot"></span><span>Personal profiles for sale — we do not sell your information</span></li>
+            </ul>
+          </article>
+        </div>
+        <div class="hero-cta" style="margin-top:28px">
+          <a class="btn btn-ghost" href="/privacy-policy">Read the full privacy policy</a>
+          <a class="btn btn-ghost" href="/vpn-disclosure">VPN data disclosure</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Stay in the shadows</h2>
+        <p>Darknode — Safer Internet. Encrypted Android VPN. Available on Google Play.</p>
+        <a class="btn btn-solid" data-play href="https://play.google.com/store/apps/details?id=com.darknode.vpn">
+          <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 20.5v-17L21 12 3 20.5z"/></svg>
+          <span>Get it on Google Play</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <small>Darknode VPN · Safer Internet</small>
+      <nav>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/vpn-disclosure">VPN disclosure</a>
+        <a data-play href="https://play.google.com/store/apps/details?id=com.darknode.vpn">Google Play</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>

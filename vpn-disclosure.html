@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Darknode VPN — VPN data disclosure</title>
+  <meta name="description" content="In-app VPN data disclosure for Darknode: why the app uses VPN, what data is accessed, and how it is used." />
+  <meta name="theme-color" content="#050505" />
+  <link rel="canonical" href="https://darknodevpn.com/vpn-disclosure" />
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/img/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">
+        <img src="assets/img/icon-round.png" alt="" width="36" height="36" />
+        <span class="brand-name">Darknode</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/privacy-policy">Privacy</a>
+        <a href="/vpn-disclosure" aria-current="page">Disclosure</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-solid" href="https://play.google.com/store/apps/details?id=com.darknode.vpn">Get the app</a>
+        <button class="nav-toggle" type="button" aria-label="Menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal wrap">
+    <article class="legal-body">
+      <p class="kicker">Please review before connecting</p>
+      <h1>VPN data disclosure</h1>
+      <p class="legal-meta">This matches the in-app disclosure shown before Darknode can connect.</p>
+
+      <section class="disclosure-card">
+        <h2>Why this app uses VPN</h2>
+        <p>Darknode creates an encrypted VPN tunnel to route your device traffic through our remote servers. This is the core function of the app and requires Android's VpnService permission.</p>
+      </section>
+
+      <section class="disclosure-card">
+        <h2>Data accessed or collected</h2>
+        <p>
+          • Device identifier (hashed) for quota management<br />
+          • Approximate location (country) and IP address before VPN connection<br />
+          • VPN session traffic volume (upload/download bytes)<br />
+          • Rewarded ad interaction counts
+        </p>
+        <p style="margin-top:12px">We do not collect browsing history, messages, or the contents of your traffic.</p>
+      </section>
+
+      <section class="disclosure-card">
+        <h2>How data is used and shared</h2>
+        <p>Collected data is used to enforce data limits, sync your allowance across reinstalls, and operate the service. It is transmitted to our backend (Cloudflare). Traffic is encrypted between your device and the VPN server endpoint.</p>
+      </section>
+
+      <section class="disclosure-card">
+        <h2>Advertising</h2>
+        <p>Optional rewarded ads (Google AdMob) let you reset or extend your data allowance. While the VPN is connected, ad requests leave through the VPN exit so they can reach Google's servers. We do not redirect or manipulate ad traffic from other apps.</p>
+      </section>
+
+      <p style="margin-top:28px">
+        Read the <a href="/privacy-policy">Privacy Policy</a> for the full statement.
+      </p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <small>Darknode VPN · Safer Internet</small>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/vpn-disclosure">VPN disclosure</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
